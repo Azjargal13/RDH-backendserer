@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Sample UI for miniSoler project">
+	<meta name="author" content="Harsh Ankur">
+	<title>Mini Soler</title>
+
+	<!-- Adding Favicon Icon -->
+	<link rel="shortcut icon" href="img/km_logo.png" type="image/png">
+	<link rel="icon" href="img/km_logo.png" type="image/png">
+	
+	<!-- jquery javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<style>
+	.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: rgb(134, 131, 131);
+		color: rgb(0, 0, 0);
+		text-align: center;
+	}
+
+	label {
+		font-size: 15px;
+		color: rgb(4, 5, 77);
+	}
+	</style>
+</head>
+
+<body id="page-top">
+	<div id="sampleUpload">
+		<div class="sampleUploadBody">
+			<div class="form-group">
+				<h3 style="text-align: center">Mini Soler</h4>
+				<br><br>
+				<label for="inputJobFile" >Select a file from your file system ⇒ </label>
+				<input class="form-control" id="inputJobFile" type="file" required="required" accept="application/pdf">
+			</div>
+		</div>
+		<div class="sampleUploadFooter" style="text-align: right">
+			<label for="submitJobButton" >Click here to submit the selected file ⇒ </label>
+			<input type="button" class="btn btn-primary btn-block" id="submitJobButton" style="color:rgb(0, 0, 0)" onclick="submitJobFunction()" value="Submit job">
+		</div>
+	</div>
+
+	<div id="sampleResponse">
+		<br><br><br><br>
+		<input id="responseFromServer" type="text" style="width: 100%; text-align: center; font-size: 20px" placeholder="Response from server goes here">
+	</div>
+	
+	<!-- /.content-wrapper-->
+	<footer class="footer">
+		<h2>Copyright © Konica Minolta Workflow Systems 2018</h2>
+	</footer>
+
+	<!-- Script for miniSoler.js -->
+	<script src="miniSoler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "minisoler",
+  "version": "1.0.0",
+  "description": "Sample miniSoler project",
+  "main": "index.js",
+  "git": "https://harshankur@bitbucket.org/harshankur/minisoler.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsh Ankur",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-fileupload": "^1.0.0-alpha.1",
+    "node-fetch": "^2.2.0"
+  }
+}
